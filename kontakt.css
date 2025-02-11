@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.head {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.ifkapifka {
+    width: 60px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.5rem; 
+    margin-left: 20px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header i {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+header i:hover {
+    color: #ff9900;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9900;
+}
+
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    width: 70%;
+    gap: 20px;
+}
+
+.kontakt-info {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #333;
+    width: 50%;
+}
+
+.kontakt-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.kontakt-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kontakt-info ul li {
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.kontakt-info ul hr {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #ff9900;
+}
+
+.kontakt-info a{
+    text-decoration: none;
+    color: #333;
+}
+
+.kontakt-info a:hover{
+    color: #ff9900;
+}
+
+.kontakt-slika {
+    flex: 1;
+    text-align: center;
+}
+
+.kontakt-slika img {
+    max-width: 80%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .kontakt {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .kontakt-info {
+        width: 100%;
+        text-align: left;
+    }
+
+    .kontakt-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .kontakt-info ul li {
+        font-size: 1rem;
+    }
+
+    .kontakt-slika {
+        width: 100%;
+    }
+
+    .kontakt-slika img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .kontakt-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .kontakt-info ul li {
+        font-size: 0.9rem;
+    }
+
+    .kontakt-slika img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+footer {
+    padding: 40px 20px; 
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    margin-top: 120px; 
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; 
+    
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem; 
+    color: #a56952;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; 
+    font-size: 0.95rem; 
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #a56952;
+}
